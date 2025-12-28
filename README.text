@@ -1,0 +1,64 @@
+# Create Vuejs Frontend App that uses Nodejs data structure:
+npx @vue/cli create vue-node-app
+
+#? Please pick a preset
+👉 Manually select features
+
+✔ Babel
+✔ Router
+✔ Vuex
+✔ CSS Pre-processors (optional)
+✔ Linter (your choice)
+
+? Use history mode for router?
+👉 Yes
+? Pick a CSS pre-processor
+👉 SCSS (recommended) OR None
+? Pick a linter
+👉 ESLint (or your preference)
+? Where do you prefer placing config?
+👉 In dedicated config files
+? Save preset?
+👉 No
+
+# Step 3 - Enter the project
+cd vue-node-app
+
+# Step 4 - Create the folders
+vue-node-app/
+├── node_modules/
+├── public/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── style-rtl.css
+│   ├── images/
+│   ├── js/
+│   ├── favicon.ico
+│   └── index.html
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── data/
+│   │   └── translation/
+│   │       ├── en.json
+│   │       └── ar.json
+│   ├── router/
+│   ├── store/
+│   ├── views/
+│   ├── App.vue
+│   └── main.js
+├── .env
+├── babel.config.js
+├── package.json
+└── README.md
+
+
+# Step 6 - Install vue-i18n (you are using $t())
+npm install vue-i18n@8
+
+# 🟢 STEP 7 — Set LTR by default (important)
+# Edit public/index.html: <html lang="en" dir="ltr">
+
+# Step 8 - Run the app
+npm run serve
+http://localhost:8080
